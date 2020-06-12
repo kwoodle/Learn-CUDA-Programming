@@ -1,7 +1,7 @@
 CUDA_PATH=/usr/local/cuda
 HOST_COMPILER ?= g++
 NVCC=${CUDA_PATH}/bin/nvcc -ccbin ${HOST_COMPILER}
-TARGET=vec_addition
+TARGET=vector_addition_gpu_thread_block
 
 INCLUDES= -I${CUDA_PATH}/samples/common/inc
 NVCC_FLAGS=-m64 -lineinfo
